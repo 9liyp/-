@@ -1,37 +1,12 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/9liyp/-/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/9liyp/-/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+机器学习的学习过程
+（1）观察测试集数据分布
+比如经典乳腺癌肿瘤预测问题
+![image](https://user-images.githubusercontent.com/92899536/144533901-7e9e4676-1072-47a4-82a9-53e58b13a758.png)
+上图是待测数据集中175条肿瘤样本在二维特征空间的分布情况，X代表恶性肿瘤，O代表良性肿瘤
+（2）初始化二类分类器
+随机初始化一个二类分类器。这个分类器用一条直线来划分良性/恶性肿瘤。决定这条直线自然是斜率和截距。这些统一称为模型的参数，也是分类器需要通过学习从训练数据中得到的。
+分类器初始化参数如下图所示
+![image](https://user-images.githubusercontent.com/92899536/144534741-44276710-4ad6-4121-bc81-4299653f87f4.png)
+（3）经过训练样本，分类器性能会有提升
+![image](https://user-images.githubusercontent.com/92899536/144535177-7e625dc5-cfb4-44e4-a320-6a184f180b07.png)
+随着训练样本数量的提高，分类准确性也一直在提高
